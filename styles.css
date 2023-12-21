@@ -1,0 +1,168 @@
+
+/* general css */
+* { font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.header {
+  text-align: center;
+ padding: 0;
+ margin-top: -200px;
+ margin-bottom: 150px;
+
+ 
+}
+.navigation {
+  text-align: center;
+  margin-top: -250px;
+  font-size: 24px;
+}
+.navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* shop page css */
+
+.main-content { display: block; flex-direction: column; gap: 20px; padding: 20px; background: white;align-items: center; /* border-style: solid;*/}
+.shirts { white; padding: 20px; text-align: center; justify-content: center; align-items: center; display: block;
+
+}
+.shirts img { width: 100%; /*border-style: solid;*/ width: 500px; height: 500px;}
+
+button {
+width: 50%;
+text-align: center;
+padding: 2px 6px;
+margin-right: 500px;
+display: inline-block;
+}
+
+.text {
+display: block;
+color: black;
+max-width: 500px;
+
+margin-left: 50px;
+padding: 50px;
+}
+
+.container {
+display: flex;
+align-items: center; /* This centers the items horizontally */
+width: 100%;
+margin:;
+
+justify-content: center;
+}
+
+.container1 {
+display: flex;
+align-items: center; /* This centers the items horizontally */
+width: 100%;
+margin: 20px;
+
+justify-content: center;
+}
+
+.size {
+margin-right: 500px;
+}
+
+.cart {
+width: 100%;
+width: 200px;
+margin-top: 5px;
+}
+
+.description {
+padding: 50px;
+}
+
+
+/* about page css */
+.about-img {
+  width: 600px;
+  height: 600px;
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* gallery page css */
+
+  .gallery-container {
+    display: inline-flex;
+    justify-content: center;
+    
+   
+  }
+  .gallery {
+   
+    display: flex;
+  
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .photo1 {
+    display: block;
+    margin: 50px;
+    
+  }
+
+  .photo1 img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .gallery-text {
+    display: block;
+    
+  }
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* about page css */
+
+.flex {
+  display: flex;
+}
+
+.about-text {
+  justify-content: center; align-items: center;
+  text-align: center;
+  width: 500px;
+  margin: 150px;
+}
+
+.about-img{
+  margin-left: 300px;
+}
+  
