@@ -5,18 +5,18 @@
 .header {
   text-align: center;
  padding: 0;
- margin-bottom: 150px;
-
- 
+ margin-top: -150px;
 }
 .navigation {
   text-align: center;
   font-size: 24px;
+  margin-top: -200px;
 }
 .navigation a {
   margin: 0 15px;
   text-decoration: none;
   color: black;
+  margin-top: -100px;
 }
 
 .navigation a:hover {
@@ -42,7 +42,7 @@
 .shirts { white; padding: 20px; text-align: center; justify-content: center; align-items: center; display: block;
 
 }
-.shirts img { width: 100%; /*border-style: solid;*/ width: 500px; height: 500px;}
+.shirts img { width: 100%; /*border-style: solid;*/ width: 300px; height: 300px;}
 
 button {
 width: 50%;
@@ -56,9 +56,9 @@ display: inline-block;
 display: block;
 color: black;
 max-width: 500px;
-
+align-items: center;
 margin-left: 50px;
-padding: 50px;
+
 }
 
 .container {
