@@ -5,14 +5,12 @@
 .header {
   text-align: center;
  padding: 0;
- 
  margin-bottom: 150px;
 
  
 }
 .navigation {
   text-align: center;
-  margin-top: -250px;
   font-size: 24px;
 }
 .navigation a {
@@ -29,8 +27,6 @@
   padding: 0;
   margin-left: 20px;
   margin-bottom: 50px;
-}
-
 
 
 
