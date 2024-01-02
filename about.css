@@ -1,0 +1,22 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* about page css */
+
+.flex {
+    display: flex;
+  }
+  
+  .about-text {
+    justify-content: center; align-items: center;
+    text-align: center;
+    width: 500px;
+    margin: 150px;
+  }
+  
+  .about-img{
+    margin-left: 300px;
+    width: 600px;
+    height: 600px;
+  }
+  
+    

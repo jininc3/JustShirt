@@ -1,0 +1,59 @@
+.main-content { display: block; flex-direction: column; gap: 20px; padding: 20px;align-items: center; /* border-style: solid;*/ }
+.shirts { padding: 20px; text-align: center; justify-content: center; align-items: center; display: block;
+
+}
+
+.shirts img { width: 100%; /*border-style: solid;*/ width: 300px; height: 300px;}
+
+button {
+width: 50%;
+text-align: center;
+padding: 2px 6px;
+margin-right: 500px;
+display: inline-block;
+}
+
+.text {
+display: block;
+color: black;
+max-width: 500px;
+align-items: center;
+margin-left: 50px;
+
+}
+
+.container {
+display: flex;
+align-items: center; /* This centers the items horizontally */
+width: 100%;
+
+justify-content: center;
+}
+
+.container1 {
+display: flex;
+align-items: center; /* This centers the items horizontally */
+width: 100%;
+margin: 20px;
+
+justify-content: center;
+}
+
+.size {
+margin-right: 500px;
+}
+
+.cart {
+width: 100%;
+width: 200px;
+margin-top: 5px;
+}
+
+.description {
+padding: 50px;
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* gallery page css */
+
+.gallery-container {
+    display: inline-flex;
+    justify-content: center;
+    
+   
+  }
+  .gallery {
+   
+    display: flex;
+  
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .photo1 {
+    display: block;
+    margin: 50px;
+    
+  }
+
+  .photo1 img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .gallery-text {
+    display: block;
+    
+  }
