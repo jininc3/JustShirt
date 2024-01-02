@@ -85,3 +85,16 @@ body {
   cursor: pointer;
   width: 150px;
 }
+
+
+#centered-div {
+  width: 50%; /* or any desired width */
+  height: 50%; /* or any desired height */
+  /* Add additional styling as needed */
+  height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+   
+}

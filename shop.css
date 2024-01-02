@@ -55,5 +55,22 @@ padding: 50px;
 
 
 
+.hover-image {
+    transition: transform 0.3s ease-in-out;
+}
 
+/* Hover effect */
+.hover-image:hover {
+    transform: scale(1.2); /* Image zooms in a bit */
+    /* You can add more effects like changing opacity, adding a border, etc. */
+}
 
+.hover-effect {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+    display: block; /* To prevent inline default behavior */
+    margin: 0 auto; /* Optional: for centering the image if needed */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+}
