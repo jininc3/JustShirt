@@ -85,10 +85,7 @@ body {
 
 
 #centered-div {
-  width: 50%; /* or any desired width */
-  height: 50%; /* or any desired height */
-  /* Add additional styling as needed */
-  height: 100%;
+ 
     margin: 0;
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -103,4 +100,9 @@ button {
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.bigger {
+  height: 500px;
+  width: 500px;
 }
