@@ -44,19 +44,16 @@ body {
 
 .footer {
   
- margin-top: 50px;
- 
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border-top: 1px solid grey;
-  
 }
+
 .footer-logo {
   display: flex;
   align-items: center;
-  
   height: 50px;
 }
 .footer-nav {
@@ -97,4 +94,13 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center;
    
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
