@@ -2,12 +2,12 @@
     font-size: large;
   }
   
-
+  
 
 .banner {
   width: 100%;
-  max-width: 2900px;
-  display: block;
+  max-width: 1200px;
+  display: flex;
   height: 700px;
   background-size: cover;
   background-position: center;
@@ -15,8 +15,9 @@
   top: 0px;
   z-index: 1;
   opacity: 1;
-
+  left: 355px;
 }
+
 
 .banner img {
   margin-left: 116px;
@@ -45,6 +46,7 @@
   width: 100%;
   position: relative;
   z-index: 10;
+  
   
 }
 
@@ -124,18 +126,47 @@
 .main-content {
      display: flex; 
      flex-direction: row; 
+     justify-content: center;
   
 }
 
-.size {
+.statue-left img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.statue-left {
+  max-width: 300px;
+  max-height: 300px;
+  border: solid;
+  margin-top: -200px;
+}
+
+.cat-right {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: -200px;
   
+}
+
+.cat {
+  max-width: 300px;
+  max-height: 300px;
+  border: solid;
+}
+
+.images {
+  justify-content: space-between;
+  display: flex;
 }
 
 .shirts { 
     padding: 0px;
     display: block;
     
+    
 }
+
 
 .cart button {
 text-align: center;
@@ -153,14 +184,11 @@ padding: 0px;
 }
 
 .cart {
-  
   display: flex;
   justify-content: center;
 }
 
 .touch{
-  
-  
   display: flex;
   justify-content: center;
 }
@@ -168,9 +196,8 @@ padding: 0px;
 .container {
 display: flex;
 width: 100%;
-justify-content: space-evenly;
-margin-top: 100px;
-
+justify-content: space-between;
+max-width: 1000px;
 }
 
 .hover-image {
