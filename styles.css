@@ -1,80 +1,32 @@
 
 /* general css */
-* { font-family: Georgia, 'Times New Roman', Times, serif;}
+* { font-family: 'Fondamento';
+  font-size: large;
+}
 
-body {
+ body {
   margin: 0;
   padding: 0;
-  background-image: url('background.png'); /* Replace with your image path */
+  background-image: url('clothes\ rack.jpeg'); /* Replace with your image path */
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents repeating the image */
   height: 100%;
   min-height: 100vh; /* Ensures background covers the full viewport height */
+  
 }
 
 
-.header {
-  text-align: center;
- padding: 0;
- margin-top: -175px;
-}
-.navigation {
-  text-align: center;
-  font-size: 24px;
-  margin-top: -250px;
-}
-.navigation a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: black;
-  margin-top: -100px;
-}
 
-.navigation a:hover {
-  text-decoration: underline;
-}
 
 .logo {
-  padding: 0;
   margin-left: 20px;
-  margin-bottom: 50px;
+  padding: 0;
 }
 
 
-.footer {
-  
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-.footer-nav {
-  margin-left: 350px;
-  list-style: none;
-  display: flex;
-  gap: 20px; /* Adjust the spacing as necessary */
-}
-.footer-nav li {
-  padding: 5px 10px;
-}
-.footer-social {
-  margin-left: 300px;
-  display: flex;
-  gap: 20px;
-  
-}
-.footer-social img {
-  width: 24px; /* Adjust the size as necessary */
-  height: auto;
-}
+
 .contact-btn {
   margin-left: 50px;
   border: none;
@@ -83,15 +35,6 @@ body {
   width: 150px;
 }
 
-
-#centered-div {
- 
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-   
-}
 
 button {
   background-color: #007bff;
@@ -102,7 +45,12 @@ button {
   cursor: pointer;
 }
 
-.bigger {
-  height: 500px;
-  width: 500px;
+.top {
+  display: block;
+  text-align: center;
+}
+
+.disclaimer {
+  text-align: center;
+  margin-top: 600px;
 }

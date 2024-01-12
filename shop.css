@@ -1,62 +1,184 @@
-.main-content { display: block; flex-direction: column; gap: 20px; padding: 20px;align-items: center; /* border-style: solid;*/ }
-.shirts { 
-    padding: 20px;
-    text-align: center; 
-    justify-content: center; 
-    align-items: center; 
-    display: block;
+* { font-family: 'Fondamento';
+    font-size: large;
+  }
+  
+
+
+.banner {
+  width: 100%;
+  max-width: 2900px;
+  display: block;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  opacity: 1;
+
 }
 
-.shirts img { width: 100%; /*border-style: solid;*/ width: 300px; height: 300px;}
+.banner img {
+  margin-left: 116px;
+}
 
-button {
-width: 50%;
+.navigation {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  z-index: 10;   
+}
+
+.navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  
+}
+
+
+.subtitle {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 20pt;
+  
+
+}
+
+  .shirts img { 
+    width: 100%;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+   
+  }
+
+
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  .footer-nav {
+    margin-left: 350px;
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust the spacing as necessary */
+  }
+
+  .footer-nav li {
+    padding: 5px 10px;
+  }
+
+  .footer-social {
+    margin-left: 300px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-social img {
+    width: 24px; /* Adjust the size as necessary */
+    height: auto;
+  }
+
+  .contact-btn {
+    margin-left: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  button {
+    margin-top: 5px;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.main-content {
+     display: flex; 
+     flex-direction: row; 
+  
+}
+
+.size {
+  
+}
+
+.shirts { 
+    padding: 0px;
+    display: block;
+    
+}
+
+.cart button {
 text-align: center;
 padding: 2px 6px;
-margin-right: 500px;
+width: 100%;
 display: inline-block;
 }
 
 .text {
 display: block;
 color: black;
-max-width: 500px;
-align-items: center;
-margin-left: 50px;
+max-width: 400px;
+padding: 0px;
 
+}
+
+.cart {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.touch{
+  
+  
+  display: flex;
+  justify-content: center;
 }
 
 .container {
 display: flex;
-align-items: center; /* This centers the items horizontally */
 width: 100%;
-justify-content: center;
+justify-content: space-evenly;
+margin-top: 100px;
+
 }
-
-.size {
-margin-right: 500px;
-}
-
-.cart {
-width: 100%;
-width: 200px;
-margin-top: 5px;
-}
-
-.description {
-padding: 50px;
-}
-
-
 
 .hover-image {
-    transition: transform 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
 .hover-image:hover {
-    transform: scale(1.2); /* Image zooms in a bit */
-    /* You can add more effects like changing opacity, adding a border, etc. */
+    transform: scale(1.1); /* Image zooms in a bit */
 }
 
 .hover-effect {
