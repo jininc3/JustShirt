@@ -1,43 +1,151 @@
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+* { font-family: 'Pixelify Sans';
+  font-size: large;
+  background-color: rgba(185,118,91,255);
+  z-index: 1;
+  
+}
 
-/* contact us page css */
+
+
+.banner {
+width: 100%;
+height: 800px;
+display: flex;
+position: absolute;
+background-size: cover;
+background-position: center;
+bottom: 0;
+z-index: 2;
+opacity: 1;
+}
+
+
+.navigation {
+text-align: center;
+position: relative;
+z-index: 4;   
+justify-content: center;
+}
+
+.navigation a {
+margin: 0 15px;
+text-decoration: none;
+color: black; 
+
+}
+.nav {
+font-size: 20pt;
+
+
+}
+
+.navigation a:hover {
+text-decoration: underline;
+}
+
+.header {
+display: flex;
+justify-content: center;
+width: 100%;
+z-index: 4;
+border: solid;
+
+}
+
+.big {
+font-size: 60pt;
+z-index: 4;
+justify-content: center;
+
+}
+
+.contact-form div {
+  z-index: 5;
+}
+
 .contact-form {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form h2 {
-    margin-top: 0;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't increase width */
-  }
-  
-  .form-group textarea {
-    height: 100px;
-  }
-  
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 5;
+}
 
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+.contact-form h2 {
+  margin: 0 0 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #555;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.footer-social {
+  margin-left: 300px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.footer-social img {
+  width: 30px; /* Adjust the size as necessary */
+  height: 30px;
+}
+
+.contact-btn {
+  margin-left: 50px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.youtube {
+  height: auto;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

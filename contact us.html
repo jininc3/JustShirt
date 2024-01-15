@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>shop</title>
+
     <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
-  <div class="header"><a href="index.html"><img class="logo" src="justshirtlogo.png"></a> </div>
+  <div class="header"><strong class="big">Just Shirt.</strong></a></div>
             
-    <div class="navigation">
-      <a href="about.html">ABOUT</a>
-      <a href="index.html">SHOP</a>
-      <a href="gallery.html">GALLERY</a>
-    </div>
-    
-    <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+  <div class="navigation">
+    <a href="about.html"><strong class="nav">ABOUT</strong></a>
+    <a href="shop.html"  ><strong class="nav">SHOP</strong></a>
+    <a href="gallery.html" ><strong class="nav">GALLERY</strong></a>
+  </div>
+  
+  <img src="office.jpeg" class="banner">  
+  
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submitForm()">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+      
+ 
 
     <footer class="footer">
-        
-        <div class="footer-social">
-          
-          <a href="https://instagram.com"><img src="instagram logo.png" alt="Instagram"></a>
-          <a href="https://twitter.com/justshirtco"><img src="x logo.png" alt="X"></a>
-        </div>
-        <a href="contact us.html" class="contact-btn">CONTACT US</a>
-      </footer>
+      <div class="footer-social">
+        <a href="https://youtube.com"><img class="youtube" src="youtube rm.png"></a>
+        <a href="https://tiktok.com"><img src="tiktok rm.png"></a>
+        <a href="https://instagram.com"><img src="instagram logo.png" alt="Instagram"></a>
+        <a href="https://twitter.com/justshirtco"><img src="x logo.png" alt="X"></a>
+      </div>
+      <a href="contact us.html" class="contact-btn">CONTACT US</a>
+    </footer>
+
+
 </body>
 </html>
