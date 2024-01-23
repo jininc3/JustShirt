@@ -15,7 +15,7 @@ background-size: cover;
 background-position: center;
 top: 0;
 z-index: 2;
-opacity: 0.2;
+opacity: 1;
 }
 
 
@@ -85,6 +85,7 @@ font-size: 20pt;
   align-items: center;
   padding: 20px;
   z-index: 10;
+  
 }
 
 .footer-social {

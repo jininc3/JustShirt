@@ -1,21 +1,17 @@
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T-Shirt E-commerce Shop</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<div class="product-card">
-  <img src="fine shirt.png" alt="T-Shirt" class="product-image">
-  <div class="product-info">
-    <h3 class="product-name">T-Shirt Name</h3>
-    <p class="product-description">Short sleeve cotton jersey t-shirt</p>
-    <div class="product-price">£25.00</div>
-    <div class="product-love-icon">&#10084; <!-- This is a simple text heart, you might use an icon font like FontAwesome here. --></div>
-  </div>
+<!-- Product List -->
+<div class="product" data-product-id="1">
+  <img src="fine shirt rm.png" alt="Shirt 1">
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+<div class="product" data-product-id="2">
+  <img src="touch grass beige rm.png" alt="Shirt 2">
+  <button class="add-to-cart-btn">Add to Cart</button>
 </div>
 
-</body>
-</html>
+<!-- Shopping Cart -->
+<div id="shopping-cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items">
+    <!-- Cart items will be dynamically added here -->
+  </ul>
+</div>
