@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add event listeners for 'Add to Cart' buttons
     addToCartButtons.forEach(button => {
       button.addEventListener('click', (event) => {
-        const productId = event.target.closest('.product').dataset.productId;
+        const productId = event.target.closest('product').dataset.productId;
         const product = cart.find(item => item.productId === productId);
   
         if (product) {
