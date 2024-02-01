@@ -1,7 +1,9 @@
 * { font-family: 'Pixelify Sans';
   font-size: large;
-  background-color: rgba(185,118,91,255);
-  z-index: 1;
+
+  background-color: rgba(3,194,204,255);
+  
+
   
 }
 
@@ -9,23 +11,24 @@
 
 .banner {
 width: 100%;
-height: 800px;
+height: 700px;
 display: flex;
-
+position: absolute;
 background-size: cover;
 background-position: center;
-
+top: 0;
 z-index: 2;
 opacity: 1;
-margin-top: -250px;
-
 }
+
+
 
 
 .navigation {
 text-align: center;
 position: relative;
 z-index: 4;   
+background-color: rgba(88,197,254,255);
 justify-content: center;
 }
 
@@ -37,7 +40,7 @@ color: black;
 }
 .nav {
 font-size: 20pt;
-
+background-color: rgba(88,197,254,255);
 
 }
 
@@ -49,8 +52,9 @@ text-decoration: underline;
 display: flex;
 justify-content: center;
 width: 100%;
-z-index: 4;
-
+z-index: 5;
+background-color: rgba(88,197,254,255);
+border: solid;
 
 }
 
@@ -58,47 +62,25 @@ z-index: 4;
 font-size: 60pt;
 z-index: 4;
 justify-content: center;
-
+background-color: rgba(88,197,254,255);
 }
 
 
-
-.contact-form {
-  background: rgba(185,118,91,255);
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 5;
-  position: relative;
+.subtitle {
+justify-content: center;
+text-align: center;
+align-items: center;
+display: flex;
+font-size: 20pt;
 }
 
-.contact-form h2 {
-  margin: 0 0 15px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 1750px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 4px;
-}
-
-.contact-form button {
+.shirts img { 
   width: 100%;
-  padding: 10px;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 300px;
+  height: 300px;
+ 
 }
 
-.contact-form button:hover {
-  background: #555;
-}
 
 
 .footer {
@@ -106,14 +88,15 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  z-index: 10;
+  position: absolute;
+  left: 25%;
+  z-index: 4;
 }
 
 .footer-social {
   margin-left: 300px;
   display: flex;
   gap: 20px;
-  z-index: 10;
 }
 
 .footer-social img {
@@ -134,6 +117,86 @@ justify-content: center;
   width: 100px;
 }
 
+button {
+  margin-top: 5px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content {
+   display: flex; 
+   flex-direction: row; 
+   justify-content: center;
+
+}
+
+
+.images {
+justify-content: space-between;
+display: block;
+position: absolute;
+width: 1800px;
+
+}
+
+.shirts { 
+  padding: 0px;
+  display: block;
+  
+  
+}
+
+
+.cart button {
+text-align: center;
+padding: 2px 6px;
+width: 100%;
+display: inline-block;
+}
+
+.text {
+display: block;
+color: black;
+max-width: 400px;
+padding: 0px;
+
+}
+
+.touch{
+display: flex;
+justify-content: center;
+
+}
+
+.container {
+display: flex;
+width: 100%;
+justify-content: space-between;
+max-width: 1200px;
+gap: 100px;
+
+}
+
+.hover-image {
+transition: transform 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+  transform: scale(1.1); /* Image zooms in a bit */
+}
+
+.hover-effect {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+  display: block; /* To prevent inline default behavior */
+  margin: 0 auto; /* Optional: for centering the image if needed */
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+}
 
 
 
@@ -150,3 +213,124 @@ justify-content: center;
 
 
 
+
+/* Style the image used to trigger the modal */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top:  100px; /* Location of the box */
+  padding: -500px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ 
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 600px;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  margin: 0;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add some padding at the bottom of the modal to fit the caption */
+
+.together {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  margin: 0;
+  background-color: transparent;
+
+  
+
+}
+
+.description {
+  text-align: center;
+  width: 500px;
+  padding: 100px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  
+}
+
+.cart {
+  border: solid;
+}
+
+.size {
+  padding: 10px;
+}

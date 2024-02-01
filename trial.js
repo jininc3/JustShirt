@@ -1,44 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cartItemsElement = document.getElementById('cart-items');
-    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-  
-    // Load cart from localStorage
-    const cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
-  
-    // Function to update the cart in localStorage and HTML
-    const updateCart = () => {
-      localStorage.setItem('shoppingCart', JSON.stringify(cart));
-  
-      // Clear the current cart HTML
-      cartItemsElement.innerHTML = '';
-  
-      // Rebuild the cart HTML
-      cart.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `Product ID: ${item.productId}, Quantity: ${item.quantity}`;
-        cartItemsElement.appendChild(li);
-      });
-    };
-  
-    // Initialize cart view
-    updateCart();
-  
-    // Add event listeners for 'Add to Cart' buttons
-    addToCartButtons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        const productId = event.target.closest('product').dataset.productId;
-        const product = cart.find(item => item.productId === productId);
-  
-        if (product) {
-          product.quantity += 1; // Increase quantity if product is already in the cart
-        } else {
-          cart.push({ productId, quantity: 1 }); // Add new product to cart
-        }
-  
-        updateCart();
-      });
-    });
+// Function to retrieve the current cart from local storage or initialize a new one
+function getCart() {
+  let cart = localStorage.getItem('shoppingCart');
+  return cart ? JSON.parse(cart) : [];
+}
+
+// Function to save the current cart to local storage
+function saveCart(cart) {
+  localStorage.setItem('shoppingCart', JSON.stringify(cart));
+}
+
+// Function to add an item to the cart
+function addToCart(productId, productName, productPrice) {
+  let cart = getCart();
+  let cartItem = cart.find(item => item.productId === productId);
+
+  if (cartItem) {
+    // Product already exists in the cart, increment the quantity
+    cartItem.quantity += 1;
+  } else {
+    // Product does not exist in the cart, add as a new item
+    cart.push({ productId, productName, productPrice, quantity: 1 });
+  }
+
+  saveCart(cart);
+}
+
+// Event listener for all "Add to Cart" buttons
+document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+  button.addEventListener('click', event => {
+    let productElement = event.target.closest('.product');
+    let productId = productElement.dataset.productId;
+    let productName = productElement.dataset.productName;
+    let productPrice = productElement.dataset.productPrice;
+
+    addToCart(productId, productName, productPrice);
+
+    
   });
-  
+});
 
  

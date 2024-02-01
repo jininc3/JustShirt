@@ -2,12 +2,14 @@
   font-size: large;
 
   background-color: rgba(3,194,204,255);
-  
 
   
 }
 
-
+.basket {
+  display: flex;
+  z-index: 100;
+}
 
 .banner {
 width: 100%;
@@ -197,20 +199,6 @@ transition: transform 0.3s ease-in-out;
 .hover-effect:hover {
   transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
