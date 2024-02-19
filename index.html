@@ -20,21 +20,38 @@
     <a href="about.html"><strong class="nav">ABOUT</strong></a>
     <a href="index.html"  ><strong class="nav">SHOP</strong></a>
     <a href="gallery.html" ><strong class="nav">GALLERY</strong></a>
-    <a href="cart.html" class="BASKET"><strong class="nav">BASKET</strong></a>
   </div>
+
+<div class="basket">
+  
+  
+    <h1 class="background">Your Shopping Basket</h1>
+    
+    <div class="background"  id="shoppingCart">
+        <!-- Cart items will be displayed here -->
+    </div>
+  
+    <button class="clearcart" onclick="clearCart()">
+      <img src="bin.png">
+    </button>
+
+    <div class="background" id="totalQuantity"><strong>0</strong></div>
+    <div class="background" id="totalCost"><strong>£0</strong></div>
+    <!-- You can add more content here, like basket items -->
+  
+</div>
   
   <img src="island.jpeg" class="banner">
   
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>'
-  <br><br><br><br><br><br>
-  
+  <br><br><br><br><br><br> <br><br><br><br><br><br> <br>
 
   <div class="subtitle">Our selection</div>
     <main class="main-content">
 
       <div class="container">
 
-        <div class="shirts product" data-product-id="1" data-product-name="T-Shirt" data-product-price="26.00">
+        <div class="shirts product" data-product-id="1" data-product-name="Touch Grass Shirt (Beige)" data-product-price="26.00">
           <img class="hover-image" id="myImg" src="touch grass beige rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
             <div class='text'> 
               <p class="touch">
@@ -44,12 +61,12 @@
                 <br>
               £26.00
               </p>
-            <div class="size">
+            <div class="shirt">
             <label>Size</label>
-              <select>
-                <option>S</option>
-                <option selected>M</option>
-                <option>L</option>
+              <select class="shirt-size">
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
               </select>
             </div>
             <div class="cart"> 
@@ -59,10 +76,9 @@
         </div>
       
 
-        <div id="myModal" class="modal">
-          <!-- The close button -->
+      <!-- <div id="myModal" class="modal">
+          
           <span class="close">&times;</span>
-          <!-- The image that will be displayed inside the modal -->
           <div class="together">
             <img class="modal-content" id="img01">
             <div class="description">
@@ -94,12 +110,10 @@
             
             </div>
           </div>
-            
-          
           
         </div>
-
-        <div class="shirts product" data-product-id="2" data-product-name="T-Shirt" data-product-price="26.00">
+      -->
+        <div class="shirts product" data-product-id="2" data-product-name="Touch Grass Shirt (White)" data-product-price="26.00">
           <img class="hover-image" id="myImg2" src="touch grass white rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
             <div class='text'> 
               <p class="touch">
@@ -109,24 +123,24 @@
                 <br>
               £26.00
               </p>
-            <div class="size">
+            <div class="shirt">
             <label>Size</label>
-              <select>
-                <option>S</option>
-                <option selected>M</option>
-                <option>L</option>
+              <select class="shirt-size">
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
               </select>
             </div>
             <div class="cart"> 
-              <button>Add to Cart</button>
+              <button class="add-to-cart-btn">Add to Cart</button>
             </div>
         </div>
         </div>
-
+<!--
         <div id="myModal2" class="modal">
-          <!-- The close button -->
+          
           <span class="close2">&times;</span>
-          <!-- The image that will be displayed inside the modal -->
+         
           <div class="together">
             <img class="modal-content" id="img02">
             <div class="description">
@@ -158,39 +172,40 @@
             
             </div>
           </div>
-            
-          
+
           
         </div>
 
-        <div class="shirts product" data-product-id="3" data-product-name="T-Shirt" data-product-price="26.00">
-          <img class="hover-image" id="myImg3" src="fine shirt rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
+      -->
+
+        <div class="shirts product" data-product-id="3" data-product-name="Im Fine Shirt(White)" data-product-price="26.00">
+          <img class="hover-image" id="myImg2" src="fine shirt rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
             <div class='text'> 
               <p class="touch">
-                <strong>Touch some Grass (beige)</strong>
+                <strong>Touch some Grass (White)</strong>
               </p>
               <p class="touch">
                 <br>
               £26.00
               </p>
-            <div class="size">
+            <div class="shirt">
             <label>Size</label>
-              <select>
-                <option>S</option>
-                <option selected>M</option>
-                <option>L</option>
+              <select class="shirt-size">
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
               </select>
             </div>
             <div class="cart"> 
-              <button>Add to Cart</button>
+              <button class="add-to-cart-btn">Add to Cart</button>
             </div>
         </div>
         </div>
-
+<!--
         <div id="myModal3" class="modal">
-          <!-- The close button -->
+       
           <span class="close3">&times;</span>
-          <!-- The image that will be displayed inside the modal -->
+          
           <div class="together">
             <img class="modal-content" id="img03">
             <div class="description">
@@ -222,9 +237,14 @@
             </div>
           </div>
             
-          
-          
+        -->
         </div>
+
+      
+
+        
+
+       
         
         <script src="javascript.js"></script>
 
@@ -240,7 +260,9 @@
 
       
     </main>
-
+    <br><br>
+    
+<div class="divider"></div>
     <footer class="footer">
       <div class="footer-social">
         <a href="https://youtube.com"><img class="youtube" src="youtube rm.png"></a>

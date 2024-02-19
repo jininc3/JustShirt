@@ -3,22 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
-  
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="trial.css">
 </head>
 <body>
-  
-  <div class="product" data-product-id="1" data-product-name="T-Shirt" data-product-price="26.00">
-    <img src="fine shirt rm.png" alt="Shirt 1">
-    <button class="add-to-cart-btn">Add to Cart</button>
+  <div class="basket-icon" onclick="openModal()">
+    <!-- Your basket icon here --><img src="shoppingcart.png">
   </div>
   
-  <div class="product" data-product-id="2" data-product-name="T-Shirt" data-product-price="26.00">
-    <img src="touch grass beige rm.png" alt="Shirt 2">
-    <button class="add-to-cart-btn">Add to Cart</button>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h1>Your Shopping Basket</h1>
+      
+      <div id="shoppingCart">
+          <!-- Cart items will be displayed here -->
+      </div>
+    
+      <button onclick="clearCart()">Clear Cart</button>
+  
+      <div id="totalQuantity">0</div>
+      <div id="totalCost">£0</div>
+      <!-- You can add more content here, like basket items -->
+    </div>
   </div>
-  <script src="trial.js"></script>
+
+  <div class="basket-icon" onclick="openModal()">
+    <!-- Your basket icon here --><img src="shoppingbasket.png">
+  </div>
+
+
+  <div class="container">
+
+    <div class="shirts product" data-product-id="1" data-product-name="Touch Grass Shirt (Beige)" data-product-price="26.00">
+      <img class="hover-image" id="myImg" src="touch grass beige rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
+        <div class='text'> 
+          <p class="touch">
+            <strong>Touch some Grass (beige)</strong>
+          </p>
+          <p class="touch">
+            <br>
+          £26.00
+          </p>
+        <div class="shirt">
+        <label>Size</label>
+          <select class="shirt-size">
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+          </select>
+        </div>
+        <div class="cart"> 
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="shirts product" data-product-id="2" data-product-name="Touch Grass Shirt (White)" data-product-price="26.00">
+      <img class="hover-image" id="myImg2" src="touch grass white rm.png" alt="" style="width:100%;max-width:300px;cursor:pointer;">
+        <div class='text'> 
+          <p class="touch">
+            <strong>Touch some Grass (White)</strong>
+          </p>
+          <p class="touch">
+            <br>
+          £26.00
+          </p>
+        <div class="shirt">
+        <label>Size</label>
+          <select class="shirt-size">
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+          </select>
+        </div>
+        <div class="cart"> 
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    </div>
+  
+   
+
+
+    <script src="trial.js"></script>
 </body>
-</html><!-- Product List -->
-
-
+</html>

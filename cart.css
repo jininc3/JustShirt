@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+#shoppingCart {
+    margin: 20px auto;
+    padding: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+#shoppingCart div {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+* { font-family: 'Pixelify Sans';
+    font-size: large;
+  
+    background-color: rgba(3,194,204,255);
+    
+  
+    
+  }
+  
+  
+  
+  .banner {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 2;
+  opacity: 1;
+  }
+  
+  
+  
+  
+  .navigation {
+  text-align: center;
+  position: relative;
+  z-index: 4;   
+  background-color: rgba(88,197,254,255);
+  justify-content: center;
+  }
+  
+  .navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black; 
+  
+  }
+  .nav {
+  font-size: 20pt;
+  background-color: rgba(88,197,254,255);
+  
+  }
+  
+  .navigation a:hover {
+  text-decoration: underline;
+  }
+  
+  .header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(88,197,254,255);
+  border: solid;
+  
+  }
+  
+  .big {
+  font-size: 60pt;
+  z-index: 4;
+  justify-content: center;
+  background-color: rgba(88,197,254,255);
+  }
+  
+  
+  .subtitle {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 20pt;
+  }
+  
+  .shirts img { 
+    width: 100%;
+    width: 300px;
+    height: 300px;
+   
+  }
+  
+  
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    left: 25%;
+    z-index: 4;
+  }
+  
+  .footer-social {
+    margin-left: 300px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-social img {
+    width: 30px; /* Adjust the size as necessary */
+    height: 30px;
+  }
+  
+  .contact-btn {
+    margin-left: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .youtube {
+    height: auto;
+    width: 100px;
+  }
+  
+  button {
+    margin-top: 5px;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+     display: flex; 
+     flex-direction: row; 
+     justify-content: center;
+  
+  }
+  
+  
+  .images {
+  justify-content: space-between;
+  display: block;
+  position: absolute;
+  width: 1800px;
+  
+  }
+  
+  .shirts { 
+    padding: 0px;
+    display: block;
+    
+    
+  }
+  
+  
+  .cart button {
+  text-align: center;
+  padding: 2px 6px;
+  width: 100%;
+  display: inline-block;
+  }
+  
+  .text {
+  display: block;
+  color: black;
+  max-width: 400px;
+  padding: 0px;
+  
+  }
+  
+  .touch{
+  display: flex;
+  justify-content: center;
+  
+  }
+  
+  .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 100px;
+  
+  }
+  
+  .hover-image {
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-image:hover {
+    transform: scale(1.1); /* Image zooms in a bit */
+  }
+  
+  .hover-effect {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+    display: block; /* To prevent inline default behavior */
+    margin: 0 auto; /* Optional: for centering the image if needed */
+  }
+  
+  .hover-effect:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+  }
+  
+  
+  
+  
+  
+  
+  
+
+  /* Style the image used to trigger the modal */
+  #myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top:  100px; /* Location of the box */
+    padding: -500px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+   
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 600px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    margin: 0;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Add some padding at the bottom of the modal to fit the caption */
+  
+  .together {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    margin: 0;
+    background-color: transparent;
+  
+    
+  
+  }
+  
+  .description {
+    text-align: center;
+    width: 500px;
+    padding: 100px;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    
+  }
+  
+  .cart {
+    border: solid;
+  }
+  
+  .size {
+    padding: 10px;
+  }
