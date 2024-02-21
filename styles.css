@@ -3,6 +3,7 @@
   background-color: rgba(3,194,204,255);
   
   
+  
 }
 
 
@@ -27,6 +28,13 @@ width: 400px;
   height: 50px;
 }
 
+.nav:hover {
+  color:#aaa;
+}
+
+.nav:active {
+  color:white
+}
 
 
 .banner {
@@ -61,9 +69,7 @@ font-size: 20pt;
 background-color: rgba(88,197,254,255);
 }
 
-.navigation a:hover {
-text-decoration: underline;
-}
+
 
 .header {
 display: flex;
@@ -129,8 +135,8 @@ z-index: 5;
 }
 
 .footer-social img {
-  width: 30px; /* Adjust the size as necessary */
-  height: 30px;
+  width: 35px; /* Adjust the size as necessary */
+  height: 35px;
 }
 
 .contact-btn {
@@ -181,6 +187,13 @@ justify-content: center;
 
 }
 
+.touch2{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  
+  }
+
 .container {
 display: flex;
 width: 100%;
@@ -213,7 +226,7 @@ transition: transform 0.3s ease-in-out;
   transition: 0.3s;
 }
 
-/* 
+
 .modal {
   display: none; 
   position: fixed; 
@@ -227,6 +240,7 @@ transition: transform 0.3s ease-in-out;
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9); 
+  
  
 }
 
@@ -235,9 +249,8 @@ transition: transform 0.3s ease-in-out;
   margin: auto;
   display: block;
   width: 600px;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
   margin: 0;
+  background-color: white;
 }
 
 
@@ -307,14 +320,26 @@ transition: transform 0.3s ease-in-out;
   background-color: transparent;
 }
 
+.description ul{
+  background-color: white;
+}
+
+.description li{
+  background-color: white;
+}
+
 .description {
   text-align: center;
   width: 500px;
   padding: 100px;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  background-color: white;
 }
-*/
+
+.modal-title{
+  background-color: white;
+  font-size: 30pt;
+}
+
 
 .modalcart {
   display: none; /* Hidden by default */
@@ -331,6 +356,18 @@ transition: transform 0.3s ease-in-out;
   text-align: center;
   
   
+}
+
+.size2 {
+  background-color: white;
+}
+.touch2 {
+  background-color: white;
+}
+
+.modal-content img {
+  width: 200px;
+  height: 200px;
 }
 
 .clearcart img {

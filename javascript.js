@@ -108,3 +108,112 @@ window.onclick = function(event) {
     closeModal();
   }
 }
+
+
+
+
+
+
+// Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var img = document.getElementById("myImg"); // You'll need to add this button to your HTML
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+img.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Optional: Close the modal when the user presses the escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+});
+
+
+
+// Get the modal element
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var img2 = document.getElementById("myImg2"); // You'll need to add this button to your HTML
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal
+img2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// Optional: Close the modal when the user presses the escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    modal2.style.display = "none";
+  }
+});
+
+
+
+
+// Get the modal element
+var modal3 = document.getElementById("myModal3");
+
+// Get the button that opens the modal
+var img3 = document.getElementById("myImg3"); // You'll need to add this button to your HTML
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on the button, open the modal
+img3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+
+// Optional: Close the modal when the user presses the escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    modal3.style.display = "none";
+  }
+});
