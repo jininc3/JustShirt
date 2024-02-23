@@ -45,14 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function displayCart() {
   let shoppingCart = document.getElementById('shoppingCart');
   let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  document.getElementById("shoppingCart").style.backgroundColor = "white";
+  document.getElementById("shoppingCart").style.backgroundColor = "transparent";
   
 
 
   if(cartItems.length === 0) {
       shoppingCart.innerHTML = "<p>Your cart is empty.</p>";
   } else {
-      shoppingCart.innerHTML = '<div class="background"></div>';
+      shoppingCart.innerHTML = '<div class="basket"></div>';
       cartItems.forEach(function(item) {
           let div = document.createElement('div');
           div.innerHTML = `${item.name} - $${item.price}`;
@@ -217,3 +217,18 @@ document.addEventListener('keydown', function(event) {
     modal3.style.display = "none";
   }
 });
+
+/*
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.toptitle');
+  var scrollPosition = window.scrollY;
+  var scrollThreshold = 400; // The threshold in pixels
+
+  if (scrollPosition > scrollThreshold) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+*/

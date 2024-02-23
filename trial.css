@@ -41,3 +41,13 @@
     max-height: 500px;
     border: solid;
   }
+
+.toptitle{
+  
+    position: fixed; /* Set the position to fixed, which is relative to the viewport */
+    top: 0; /* Position the header at the top of the viewport */
+    width: 100%; /* Make the header full width */
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+    background-color: rgba(0,0,0,0.4);
+  
+}
