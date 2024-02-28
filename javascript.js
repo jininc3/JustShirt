@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function displayCart() {
   let shoppingCart = document.getElementById('shoppingCart');
   let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  document.getElementById("shoppingCart").style.backgroundColor = "transparent";
   
 
 
@@ -76,6 +75,9 @@ function updateTotalQuantityDisplay() {
     totalQuantity += item.quantity;
   });
   document.getElementById('totalQuantity').textContent = `${totalQuantity}`;
+  
+  
+  
 }
 
 
@@ -86,33 +88,8 @@ function updateTotalCost() {
     totalCost += parseFloat(item.price) * item.quantity;
   });
   document.getElementById('totalCost').textContent = `£${totalCost}`;
+  
 }
-
-
-// Get the modal
-var modal = document.getElementById('modalcart');
-
-// Function to open the modal
-function openModal() {
-  modal.style.display = 'block';
-}
-
-// Function to close the modal
-function closeModal() {
-  modal.style.display = 'none';
-}
-
-// Close the modal if the user clicks anywhere outside of it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-}
-
-
-
-
-
 
 // Get the modal element
 var modal = document.getElementById("myModal");
@@ -218,17 +195,39 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-/*
-window.addEventListener('scroll', function() {
-  var header = document.querySelector('.toptitle');
-  var scrollPosition = window.scrollY;
-  var scrollThreshold = 400; // The threshold in pixels
 
-  if (scrollPosition > scrollThreshold) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
+
+var modal5 = document.getElementById('modalcart5');
+
+// Get the button that opens the modal
+var btn5 = document.getElementById("myBtn5");
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+
+// Function to open the modal
+function openModal() {
+  modal5.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+  modal5.style.display = 'none';
+}
+
+// When the user clicks the button, open the modal 
+btn5.onclick = function() {
+  openModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+  closeModal();
+}
+
+// Close the modal if the user clicks anywhere outside of it
+window.onclick = function(event) {
+  if (event.target == modal5) {
+    closeModal();
   }
-});
-
-*/
+}

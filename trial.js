@@ -1,5 +1,3 @@
-// Existing code...
-
 function addToCart(productId, productName, productPrice, productSize) {
   let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
   let found = cartItems.some(item => item.id === productId);
@@ -47,11 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function displayCart() {
   let shoppingCart = document.getElementById('shoppingCart');
   let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  
+
 
   if(cartItems.length === 0) {
       shoppingCart.innerHTML = "<p>Your cart is empty.</p>";
   } else {
-      shoppingCart.innerHTML = '';
+      shoppingCart.innerHTML = '<div class="basket"></div>';
       cartItems.forEach(function(item) {
           let div = document.createElement('div');
           div.innerHTML = `${item.name} - $${item.price}`;
@@ -74,7 +74,10 @@ function updateTotalQuantityDisplay() {
   cartItems.forEach(item => {
     totalQuantity += item.quantity;
   });
-  document.getElementById('totalQuantity').textContent = `Total Quantity: ${totalQuantity}`;
+  document.getElementById('totalQuantity').textContent = `${totalQuantity}`;
+  
+  
+  
 }
 
 
@@ -84,26 +87,48 @@ function updateTotalCost() {
   itemsCart.forEach(item => {
     totalCost += parseFloat(item.price) * item.quantity;
   });
-  document.getElementById('totalCost').textContent = `Total Cost: ${totalCost}`;
+  document.getElementById('totalCost').textContent = `£${totalCost}`;
+  
 }
 
 
-// Get the modal
-var modal = document.getElementById('modal');
+var modal2 = document.getElementById('modalcart2');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
 
 // Function to open the modal
 function openModal() {
-  modal.style.display = 'block';
+  modal2.style.display = 'block';
 }
 
 // Function to close the modal
 function closeModal() {
-  modal.style.display = 'none';
+  modal2.style.display = 'none';
+}
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  openModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  closeModal();
 }
 
 // Close the modal if the user clicks anywhere outside of it
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target == modal2) {
     closeModal();
   }
 }
+
+
+
+
+
+

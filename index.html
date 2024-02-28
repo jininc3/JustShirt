@@ -6,6 +6,12 @@
     <title>shop</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="shirts.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
@@ -14,41 +20,47 @@
 </head>
 <body>
   <div class="toptitle">
-  <div class="header"><strong class="big">Just Shirt.</strong></a></div>
+  <div class="header"><strong class="big">Just Shirt.</strong></a>
+    <div class="shop">
+      <button class="clear" id="myBtn5"><img class="normal"src="shoppingbasket.png"></button>
+  <div class="basket">
+    <div id="totalQuantity"><strong>0</strong></div>
+  <div id="totalCost">£0</div> </div>  
+  
+  
+    </div></div>
             
   <div class="navigation">
     <a href="about.html"><strong class="nav">ABOUT</strong></a>
     <a href="index.html"  ><strong class="nav">SHOP</strong></a>
     <a href="gallery.html" ><strong class="nav">GALLERY</strong></a>
-    <div class="shop">
-    <img src="shoppingbasket.png">
-  <div class="basket" id="totalQuantity"><strong>0</strong></div>
-  
-    <div class="basket" id="totalCost"><strong>£0</strong></div>
-    </div>
+    
   </div>
   </div>
-<!--
-<div class="basket">
+
+
+
+
+
+<div id="modalcart5" class="modal5">
+  <div class="modal-content5">
+    <span class="close5">&times;</span>
+    <div class="carto">
   
   
-    <h1 class="background">Your Shopping Basket</h1>
+      <h1 class="background">Your Shopping Basket</h1>
+      
+      
+      <div class="background"  id="shoppingCart"></div>
+      <button class="clearcart" onclick="clearCart()">
+        <img src="bin.png"></button>
+   
+      
     
-    
-    <div class="background"  id="shoppingCart">
-        
-    </div>
-  
-    <button class="clearcart" onclick="clearCart()">
-      <img src="bin.png">
-    </button>
-  
-    <div class="background" id="totalQuantity"><strong>0</strong></div>
-    <div class="background" id="totalCost"><strong>£0</strong></div>
-    
-  
+  </div>
+  </div>
+
 </div>
--->
   
   <img src="island.jpeg" class="banner">
   
