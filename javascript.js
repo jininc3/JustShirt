@@ -54,7 +54,7 @@ function displayCart() {
       shoppingCart.innerHTML = '<div class="basket"></div>';
       cartItems.forEach(function(item) {
           let div = document.createElement('div');
-          div.innerHTML = `${item.name} - $${item.price}`;
+          div.innerHTML = `${item.name} - $${item.price} x ${item.quantity}`;
           shoppingCart.appendChild(div);
       });
   }

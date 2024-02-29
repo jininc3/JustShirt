@@ -2,12 +2,12 @@
   position: absolute;
   top: 25px;
   right: 300px;
- 
   z-index: 500;
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   width: 200px;
   justify-content: space-between;
+  
 }
 
 
@@ -223,4 +223,19 @@
 
 .clear {
   background-color: transparent;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.clearcart img{
+  justify-content: center;
+  text-align: center;
+
+}
+
+strong {
+  font-size: 15pt;
 }
